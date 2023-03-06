@@ -1,4 +1,4 @@
-package tests.day_10_TestNGFramework;
+package tests.day10_TestNGFramework;
 
 import org.testng.annotations.*;
 
