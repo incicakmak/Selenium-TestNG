@@ -10,14 +10,15 @@ import utilities.ReusableMethods;
 
 public class C04_FacebookLogin {
 
-    @Test
+    @Test (groups = "smoke")
     public void facebookTesti(){
         FacebookPage facebookPage= new FacebookPage();
         //1 - https://www.facebook.com/ adresine gidin
         Driver.getDriver().get("https://www.facebook.com/");
 
         // cookies kabul edin
-        facebookPage.cookiesKabulButonu.click();
+       // ReusableMethods.bekle(2);
+        //facebookPage.cookiesKabulButonu.click();
         //2- POM’a uygun olarak email, sifre kutularini ve giris yap butonunu locate edin
 
         //3- Faker class’ini kullanarak email ve sifre degerlerini yazdirip, giris butonuna basin
